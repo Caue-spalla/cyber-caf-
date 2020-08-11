@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cyber Café</title>
+         
+		<script language="javascript" type="text/javascript">
+			dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+			monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "outubro", "novembro", "dezembro")
+			now = new Date
+        </script>	
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+<body>
+    <div id="principal">
+        <div id="topo">
+            <a href="index.html"> <div id="logo"> <img src="img/logo.png"></div> </a>
+            <div id="data">
+                    <script language=javascript type="text/javascript">
+                        document.write ("<p> Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </p>")
+                    </script>
+            </div>
+        </div>
+
+        <div id="menu_principal">
+            <div id="menu_item">
+            <a href="index.html"><div class="link"> Home </div></a>
+            <a href="promocoes.html"><div class="link"> Promoções </div></a>
+            <a href="servicos.html"><div class="link"> Serviços </div></a>
+            <a href="cardapio.html"><div class="link"> Cárdapio </div></a>
+            <a href="eventos.html"><div class="link"> Eventos </div></a>
+            <a href="contatos.html"><div class="link"> Contatos </div></a>
+        </div>
+        </div>
+        <div id="conteudo">
+            <div id="menu_servicos">
+                <ul>
+                    <li> Internet </li>
+                    <li> Jogos em rede</li>
+                    <li> Impressão</li>
+                    <li> Scanner</li>
+                    <li> Gravação em CD/DVD</li>
+                    <li> Back-up </li>
+                    <li> Bate-papo </li>
+                </ul>
+            </div>
+            <div id="novidades">
+                <h1> Novidades </h1>
+                <img src="img/novidades.jpg">
+                <h2>Novos pratos no Cardápio</h2>
+                <p>A Cyber Café, especializada em grelhados e parmegianas, acaba de incluir 10 novos pratos em seu cardápio.</p>
+                <a href="promocoes.html">leia +</a>    
+            </div>
+            <div id="eventos">
+                <h1>eventos</h1>
+                <img src="img/eventos.jpg">
+                <h2>30/05/2020</h2>
+                <p>- cyber café 
+                    informa: nos dias 3, 4 e 5 
+                    de setembro estaremos com as  maquinas alugadas para a realização do evento acervus cup.</p>
+                <a href="eventos.html">leia +</a>   
+            </div>
+            <div id="localizacao">
+                <h1 style="margin-left: 8px; margin-top: 5px;">Localização</h1>
+                <a href="https://www.google.com/maps/place/Av.+Brasil,+400+-+Parque+Res.+Nardini,+Americana+-+SP,+13468-390/@-22.7526919,-47.3472497,17z/data=!3m1!4b1!4m5!3m4!1s0x94c89bd8e78448cd:0xa9acb4a4f89e2ff3!8m2!3d-22.7526919!4d-47.345061" target="blank"><img src="img/mapa.jpg" style="margin-left: 3px;"></a> 
+                <p style="margin-left: 8px;margin-top: 5px;">AV. Brasil 400, Freazin Americana</p>
+            </div>
+            <div id="cardapio">
+                <h1 style="margin-top: 5px;">Cardápio</h1>
+
+                <a href="pizza.html"><img src="img/pizza.png"></a>
+                <a href="saladas.html"><img src="img/saladas.png"></a>
+                <a href="doces.html"><img src="img/doces.png"></a>
+            </div>
+            <div id="atendimento">
+                <h1 style="margin-left: 8px; margin-top: 5px;">Atendimento</h1>
+                <p style="margin-left: 8px;">19<span style="font-size: 24px;">3458-7898</span></p>
+            </div>
+        </div>
+        <div id="xicara"> <img src="img/xicara.png"></div>
+        <div id="twitter"> <img src="img/logo_tw.png"> </div>
+        <div id="tww"><p><span style="font-size: 24px;">@cybercafe</span></p></div>
+        <div id="rodape"> <p>2000-2020 cybercafe.com Todos os direitos reservados</p></div>
+     </div>
+</body>    
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cyber Café</title>
+         
+		<script language="javascript" type="text/javascript">
+			dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+			monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "outubro", "novembro", "dezembro")
+			now = new Date
+        </script>	
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style type="text/css">
+            .divisão{
+                width: 740px;
+                height: auto;
+                margin: 20px;
+                float: left;
+            }
+        </style>
+    </head>
+<body>
+    <div id="principal">
+        <div id="topo">
+            <a href="index.html"> <div id="logo"> <img src="img/logo.png"></div> </a>
+            <div id="data">
+                    <script language=javascript type="text/javascript">
+                        document.write ("<p> Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </p>")
+                    </script>
+            </div>
+        </div>
+
+        <div id="menu_principal">
+            <div id="menu_item">
+            <a href="index.html"><div class="link"> Home </div></a>
+            <a href="promocoes.html"><div class="link"> Promoções </div></a>
+            <a href="servicos.html"><div class="link"> Serviços </div></a>
+            <a href="cardapio.html"><div class="link"> Cárdapio </div></a>
+            <a href="eventos.html"><div class="link"> Eventos </div></a>
+            <a href="contatos.html"><div class="link"> Contatos </div></a>
+        </div>
+    </div>
+        <div id="conteudo">
+            <div class="divisão">
+           <h1>Internet</h1>
+           <p>Um navegador de Internet que é possivel pesquisar e encontrar dados.</p>
+           <h1>Jogos em rede</h1>
+           <p>Jogos salvos na nossa rede de dados, com mais de 7 jogos virtuais</p>
+           <h1>Impressão</h1>
+           <p>Uma Impressão em alta resolução de qualquer imagem digitalizada</p>
+           <h1>Scanner</h1>
+           <p>um scanner que digitaliza imagens e documentos</p>
+           <h1>Gravação em CD/DVD</h1>
+           <p>Uma gravação em CD ou DVD que você consegue obter em nosso café</p>
+           <h1>Back-up</h1>
+           <p>Um Back-up de dados da nossa rede em caso de um problema em nossos servidores</p>
+           <h1>Bate-papo</h1>
+           <p>um bate-papo ao vivo para conversar com nossos atendentes ou seus amigos</p>
+        </div>
+    </div>
+        <div id="rodape"> <p>2000-2020 cybercafe.com Todos os direitos reservados</p></div>
+     </div>
+</body>    
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cyber Café</title>
+         
+		<script language="javascript" type="text/javascript">
+			dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+			monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "outubro", "novembro", "dezembro")
+			now = new Date
+        </script>	
+
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <style type="text/css">
+            .divisao{
+            width: 370px;
+            height: 568;
+            margin: 10px;
+            float: left;
+        }
+        .foto_evento{
+            border-width: 5px;
+            border-color: white;
+            border-style: solid;
+        }
+        </style>
+    </head>
+<body>
+    <div id="principal">
+        <div id="topo">
+            <a href="index.html"> <div id="logo"> <img src="img/logo.png"></div> </a>
+            <div id="data">
+                    <script language=javascript type="text/javascript">
+                        document.write ("<p> Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </p>")
+                    </script>
+            </div>
+        </div>
+
+        <div id="menu_principal">
+            <div id="menu_item">
+            <a href="index.html"><div class="link"> Home </div></a>
+            <a href="promocoes.html"><div class="link"> Promoções </div></a>
+            <a href="servicos.html"><div class="link"> Serviços </div></a>
+            <a href="cardapio.html"><div class="link"> Cárdapio </div></a>
+            <a href="eventos.html"><div class="link"> Eventos </div></a>
+            <a href="contatos.html"><div class="link"> Contatos </div></a>
+        </div>
+    </div>
+        <div id="conteudo">
+           <div class="divisao">
+                <img src="img/eventos/prom_02.jpg" class="foto_evento">
+                <h1>Café Da manhã de segunda</h1>
+                <p>
+                    O Cyber Café deseja uma bela segunda-feira para todos os nossos clientes e por isso, teremos uma promoção de 70% em todos os produtos
+                </p>
+                <p><strong>
+                    Data: 03/08 - 08h até 12h
+                </p></strong>
+                <p><strong>Local: </strong>AV. Brasil 400, Freazin Americana / SP</p>
+           </div>
+           <div class="divisao">
+            <img src="img/eventos/prom_01.jpg" class="foto_evento">
+            <h1>Neon Wave Café Sell Out</h1>
+            <p>Durante nosso evento Neon Wave teremos um desconto de 50% em nossos cafés 20% em pizzas e 10% em doces </p>
+            <p><strong>
+                Data: 28/08 - 18h até 23h
+            </p></strong>
+            <p><strong>Local: </strong>AV. Brasil 400, Freazin Americana / SP</p>
+        </div>
+        </div>
+
+        <div id="rodape"> <p>2000-2020 cybercafe.com Todos os direitos reservados</p></div>
+     </div>
+</body>    
+</html>
